@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard Manajemen Proyek Pengabdian Masyarakat (MPKM)">
+    <title>MPKM Dashboard | Jemur Wonosari</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class='bx bxs-dashboard'></i>
+                    <span>MPKM Dashboard</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-target="timeline">
+                    <i class='bx bx-calendar-event'></i>
+                    <span>Timeline & Eksekusi</span>
+                </button>
+                <button class="nav-item" data-target="undangan">
+                    <i class='bx bx-envelope'></i>
+                    <span>Draf Undangan</span>
+                </button>
+                <button class="nav-item" data-target="rundown">
+                    <i class='bx bx-list-ul'></i>
+                    <span>Rundown & Materi</span>
+                </button>
+                <button class="nav-item" data-target="database">
+                    <i class='bx bx-folder-open'></i>
+                    <span>Folder Master</span>
+                </button>
+                <button class="nav-item" data-target="format-data">
+                    <i class='bx bx-data'></i>
+                    <span>Format Data</span>
+                </button>
+                <button class="nav-item" data-target="tim">
+                    <i class='bx bx-group'></i>
+                    <span>Struktur Tim</span>
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Digitalisasi Rumah Kos<br>RT Jemur Wonosari</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- GLOBAL DASHBOARD HEADER -->
+            <div class="global-dashboard glass-card">
+                <div class="dashboard-header-info">
+                    <h2>Proyek Digitalisasi Kos Jemur Wonosari</h2>
+                    <p class="subtitle">Mata Kuliah MPKM - UIN Sunan Ampel Surabaya</p>
+                    <div class="countdown-badge">
+                        <i class='bx bx-time-five'></i> <span id="countdown">Sisa Waktu: Menghitung...</span>
+                    </div>
+                </div>
+                
+                <div class="targets-container">
+                    <h3><i class='bx bx-target-lock'></i> Target Utama Minggu Ini</h3>
+                    <ul class="target-list">
+                        <li><i class='bx bxs-check-circle'></i> Mapping 100% data kos di satu RT Gg. Lebar.</li>
+                        <li><i class='bx bxs-check-circle'></i> Sukses menyelenggarakan FGD & Edukasi Digital hari Rabu.</li>
+                        <li><i class='bx bxs-check-circle'></i> Membantu warga mengaktifkan Katalog WA Business.</li>
+                        <li><i class='bx bxs-check-circle'></i> Peluncuran akun Instagram direktori kos.</li>
+                        <li><i class='bx bxs-check-circle'></i> Penyelesaian Jurnal/Laporan MPKM hari Kamis.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section: Timeline -->
+            <section id="timeline" class="view-section active-section">
+                <header class="section-header">
+                    <h1 class="page-title">Revisi Timeline & Keperluan Tim</h1>
+                    <p class="page-subtitle">Rencana harian pelaksanaan program pengabdian masyarakat.</p>
+                </header>
+                
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-day">Ahad, 24 Mei 2026</span>
+                            <h3 class="timeline-title">Advokasi & Persiapan Administrasi</h3>
+                            <div class="timeline-details">
+                                <div class="detail-group">
+                                    <span class="badge focus-badge"><i class='bx bx-target-lock'></i> Fokus</span>
+                                    <p>Kamu dan perwakilan tim melakukan silaturahmi/advokasi khusus ke Ketua RT setempat untuk area satu gang tersebut.</p>
+                                </div>
+                                <div class="detail-group">
+                                    <span class="badge need-badge"><i class='bx bx-shopping-bag'></i> Keperluan</span>
+                                    <p>Membawa draf proposal/surat izin, mencetak undangan FGD, dan membuat template database.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-day">Senin - Selasa, 25 - 26 Mei 2026</span>
+                            <h3 class="timeline-title">Door-to-Door (Eksekusi Lapangan & Undangan)</h3>
+                            <div class="timeline-details">
+                                <div class="detail-group">
+                                    <span class="badge focus-badge"><i class='bx bx-target-lock'></i> Fokus</span>
+                                    <p>Seluruh tim (dibagi menjadi kelompok kecil, misal Astri dan Aisyah satu tim) turun ke gang sasaran untuk mendata 9 poin hunian sekaligus menyerahkan undangan FGD secara langsung kepada pemilik kos.</p>
+                                </div>
+                                <div class="detail-group">
+                                    <span class="badge need-badge"><i class='bx bx-shopping-bag'></i> Keperluan</span>
+                                    <p>Jas almamater, lembar/ceklis 9 poin pendataan, kamera/HP untuk dokumentasi fasilitas, dan undangan fisik.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-day">Rabu, 27 Mei 2026</span>
+                            <h3 class="timeline-title">Pelaksanaan FGD & Pelatihan Digital</h3>
+                            <div class="timeline-details">
+                                <div class="detail-group">
+                                    <span class="badge focus-badge"><i class='bx bx-target-lock'></i> Fokus</span>
+                                    <p>Menyelenggarakan FGD di Aula Al-Ikhlas sebagai wadah penyamaan persepsi, pelatihan WhatsApp Business, dan perkenalan akun Instagram.</p>
+                                </div>
+                                <div class="detail-group">
+                                    <span class="badge need-badge"><i class='bx bx-shopping-bag'></i> Keperluan</span>
+                                    <p>Proyektor, sound system, daftar hadir, dan konsumsi (snack/makan) yang disiapkan pada hari H.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-day">Kamis, 28 Mei 2026</span>
+                            <h3 class="timeline-title">Integrasi Data & Eksekusi Tugas Akhir</h3>
+                            <div class="timeline-details">
+                                <div class="detail-group">
+                                    <span class="badge focus-badge"><i class='bx bx-target-lock'></i> Fokus</span>
+                                    <p>Merapikan seluruh katalog WhatsApp Business warga, meluncurkan akun Instagram, dan menyusun laporan jurnal MPKM.</p>
+                                </div>
+                                <div class="detail-group">
+                                    <span class="badge need-badge"><i class='bx bx-shopping-bag'></i> Keperluan</span>
+                                    <p>Laptop, koneksi internet, dan file master data kos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Undangan -->
+            <section id="undangan" class="view-section">
+                <header class="section-header">
+                    <h1 class="page-title">Draf Undangan Pemilik Kos</h1>
+                    <p class="page-subtitle">Draf undangan resmi untuk acara silaturahmi dan sosialisasi digitalisasi.</p>
+                    <div class="header-actions">
+                        <button id="copyBtn" class="btn primary-btn"><i class='bx bx-copy'></i> Salin Teks Undangan</button>
+                    </div>
+                </header>
+
+                <div class="paper-container glass-card" id="undanganText">
+                    <div class="surat-header">
+                        <p>Surabaya, 25 Mei 2026</p>
+                        <table class="surat-meta">
+                            <tr>
+                                <td>Hal</td>
+                                <td>: Undangan Silaturahmi & Sosialisasi Digitalisasi Rumah Kos</td>
+                            </tr>
+                            <tr>
+                                <td>Lampiran</td>
+                                <td>: -</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <p>Yth. <strong>Bapak/Ibu Pemilik Rumah Kos</strong><br>
+                        di Lingkungan RT [Nomor RT], Jemur Wonosari</p>
+                    </div>
+                    
+                    <div class="surat-body">
+                        <p>Assalamu’alaikum Warahmatullahi Wabarakatuh,</p>
+                        <p>Puji syukur kita panjatkan ke hadirat Allah SWT. Dalam rangka pelaksanaan program pengabdian masyarakat dari mahasiswa UIN Sunan Ampel Surabaya, kami bermaksud mengadakan Forum Silaturahmi sekaligus Sosialisasi dan Pelatihan <strong>"Digitalisasi Promosi Rumah Kos"</strong>.</p>
+                        <p>Kegiatan ini bertujuan untuk membantu Bapak/Ibu memperluas promosi kamar kos agar lebih mudah dijangkau oleh calon mahasiswa baru melalui pemanfaatan aplikasi WhatsApp dan Instagram.</p>
+                        <p>Sehubungan dengan hal tersebut, kami mengundang Bapak/Ibu untuk hadir pada:</p>
+                        
+                        <table class="surat-details">
+                            <tr>
+                                <td>Hari, Tanggal</td>
+                                <td>: Rabu, 27 Mei 2026</td>
+                            </tr>
+                            <tr>
+                                <td>Waktu</td>
+                                <td>: 19.30 WIB - Selesai</td>
+                            </tr>
+                            <tr>
+                                <td>Tempat</td>
+                                <td>: Aula Al-Ikhlas</td>
+                            </tr>
+                        </table>
+
+                        <div class="catatan-penting">
+                            <div class="catatan-icon"><i class='bx bxs-info-circle'></i></div>
+                            <div class="catatan-text">
+                                <strong>Catatan Penting:</strong> Guna memaksimalkan sesi pelatihan, kami memohon agar Bapak/Ibu membawa Smartphone (HP) dan menyiapkan nomor yang akan digunakan untuk WhatsApp Business.
+                            </div>
+                        </div>
+
+                        <p>Demikian undangan ini kami sampaikan. Kehadiran Bapak/Ibu sangat berarti bagi kesuksesan program ini. Atas perhatian dan waktunya, kami ucapkan terima kasih.</p>
+                        <p>Wassalamu’alaikum Warahmatullahi Wabarakatuh.</p>
+                    </div>
+
+                    <div class="surat-footer">
+                        <p>Hormat kami,</p>
+                        <p>Ketua Pelaksana,</p>
+                        <br><br><br>
+                        <p><strong>Ahadan Atmadikoro Wicaksana</strong></p>
+                    </div>
+                </div>
+                <!-- Hidden text for copy function -->
+                <textarea id="hiddenUndanganText" style="display:none;">
+Surabaya, 25 Mei 2026
+
+Hal: Undangan Silaturahmi & Sosialisasi Digitalisasi Rumah Kos
+Lampiran: -
+
+Yth. Bapak/Ibu Pemilik Rumah Kos
+di Lingkungan RT [Nomor RT], Jemur Wonosari
+
+Assalamu’alaikum Warahmatullahi Wabarakatuh,
+
+Puji syukur kita panjatkan ke hadirat Allah SWT. Dalam rangka pelaksanaan program pengabdian masyarakat dari mahasiswa UIN Sunan Ampel Surabaya, kami bermaksud mengadakan Forum Silaturahmi sekaligus Sosialisasi dan Pelatihan "Digitalisasi Promosi Rumah Kos".
+
+Kegiatan ini bertujuan untuk membantu Bapak/Ibu memperluas promosi kamar kos agar lebih mudah dijangkau oleh calon mahasiswa baru melalui pemanfaatan aplikasi WhatsApp dan Instagram.
+
+Sehubungan dengan hal tersebut, kami mengundang Bapak/Ibu untuk hadir pada:
+Hari, Tanggal: Rabu, 27 Mei 2026
+Waktu: 19.30 WIB - Selesai
+Tempat: Aula Al-Ikhlas
+
+Catatan Penting:
+> Guna memaksimalkan sesi pelatihan, kami memohon agar Bapak/Ibu membawa Smartphone (HP) dan menyiapkan nomor yang akan digunakan untuk WhatsApp Business.
+
+Demikian undangan ini kami sampaikan. Kehadiran Bapak/Ibu sangat berarti bagi kesuksesan program ini. Atas perhatian dan waktunya, kami ucapkan terima kasih.
+
+Wassalamu’alaikum Warahmatullahi Wabarakatuh.
+
+Hormat kami,
+Ketua Pelaksana,
+
+
+(Tanda Tangan)
+
+
+Ahadan Atmadikoro Wicaksana
+                </textarea>
+            </section>
+
+            <!-- Section: Rundown -->
+            <section id="rundown" class="view-section">
+                <header class="section-header">
+                    <h1 class="page-title">Rundown & Materi FGD</h1>
+                    <p class="page-subtitle">Rabu, 27 Mei 2026 | Durasi estimasi: 90 - 120 Menit</p>
+                </header>
+
+                <div class="rundown-container">
+                    <div class="rundown-card glass-card">
+                        <div class="time-badge">10 Menit</div>
+                        <div class="rundown-content">
+                            <h3>Pembukaan</h3>
+                            <p>MC membuka acara, pembacaan doa.</p>
+                        </div>
+                    </div>
+                    <div class="rundown-card glass-card">
+                        <div class="time-badge">10 Menit</div>
+                        <div class="rundown-content">
+                            <h3>Sambutan</h3>
+                            <p>Sambutan dari Ketua RT setempat dan sambutan dari Ketua Pelaksana (Diko).</p>
+                        </div>
+                    </div>
+                    <div class="rundown-card glass-card highlight-card">
+                        <div class="time-badge">15 Menit</div>
+                        <div class="rundown-content">
+                            <h3>Materi 1: Pentingnya Promosi Digital</h3>
+                            <p>Penjelasan singkat mengapa mahasiswa baru sekarang mencari kos via online, dan bagaimana asimetri informasi membuat kamar kosong padahal fasilitasnya bagus.</p>
+                        </div>
+                    </div>
+                    <div class="rundown-card glass-card highlight-card main-event">
+                        <div class="time-badge">40 Menit</div>
+                        <div class="rundown-content">
+                            <h3>Materi 2: Pelatihan WhatsApp Business (Sesi Praktik)</h3>
+                            <ul class="rundown-list">
+                                <li><i class='bx bx-check-circle'></i> Tim menyebar untuk mendampingi pemilik kos secara one-on-one atau kelompok kecil.</li>
+                                <li><i class='bx bx-check-circle'></i> Membantu transisi dari WA biasa ke WA Business.</li>
+                                <li><i class='bx bx-check-circle'></i> Memasukkan data fasilitas, harga, dan foto yang sudah difoto oleh tim saat door-to-door ke dalam fitur Katalog WA.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rundown-card glass-card highlight-card">
+                        <div class="time-badge">15 Menit</div>
+                        <div class="rundown-content">
+                            <h3>Materi 3: Integrasi Instagram</h3>
+                            <p>Menjelaskan bahwa tim telah membuat akun Instagram khusus (misal: <strong>@InfoKosJemurWonosari</strong>) yang berisi rangkuman kos di gang tersebut. Ajarkan cara membagikan link profil Instagram ke calon penyewa.</p>
+                        </div>
+                    </div>
+                    <div class="rundown-card glass-card">
+                        <div class="time-badge">15 Menit</div>
+                        <div class="rundown-content">
+                            <h3>Tanya Jawab & Penutup</h3>
+                            <p>Sesi diskusi, pembagian konsumsi, dan foto bersama.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Database Folder Master -->
+            <section id="database" class="view-section">
+                <header class="section-header">
+                    <h1 class="page-title">Struktur Folder Master</h1>
+                    <p class="page-subtitle">Simpan seluruh dokumentasi visual secara hierarkis di Google Drive/Penyimpanan Lokal.</p>
+                </header>
+
+                <div class="glass-card structure-card">
+                    <div class="tree-view">
+                        <ul class="tree">
+                            <li class="folder root-folder">
+                                <i class='bx bxs-folder-open'></i> Database Kos RT [X] Jemur Wonosari
+                                <ul>
+                                    <li class="folder">
+                                        <i class='bx bxs-folder'></i> 01_Kos_Ibu_Siti
+                                        <ul class="files">
+                                            <li><i class='bx bxs-image'></i> 1_Tampak_Depan.jpg</li>
+                                            <li><i class='bx bxs-image'></i> 2_Kamar_Mandi.jpg</li>
+                                            <li><i class='bx bxs-image'></i> 3_Dapur.jpg</li>
+                                            <li><i class='bx bxs-image'></i> 4_Parkiran.jpg</li>
+                                            <li><i class='bx bxs-image'></i> 5_Jemuran.jpg</li>
+                                        </ul>
+                                    </li>
+                                    <li class="folder">
+                                        <i class='bx bxs-folder'></i> 02_Kos_Bapak_Budi
+                                        <ul class="files text-muted">
+                                            <li><i>(Isi foto fasilitas seperti di atas)</i></li>
+                                        </ul>
+                                    </li>
+                                    <li class="file excel-file">
+                                        <i class='bx bxs-file-export'></i> Master_Data_Hunian.xlsx
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Format Master Data Hunian (Vertical) -->
+            <section id="format-data" class="view-section">
+                <header class="section-header">
+                    <h1 class="page-title">Format Master Data Hunian</h1>
+                    <p class="page-subtitle">Formulir vertikal untuk pendataan detail fasilitas rumah kos.</p>
+                </header>
+
+                <div class="glass-card form-card">
+                    <div class="form-header">
+                        <h3><i class='bx bx-list-check'></i> Form Data Kos</h3>
+                        <span class="badge focus-badge">Contoh Pengisian</span>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>No</label>
+                            <div class="form-value">1</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Nama Kost</label>
+                            <div class="form-value">Kos Ibu Siti</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Nama Pemilik</label>
+                            <div class="form-value">Siti Aminah</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Alamat Lengkap</label>
+                            <div class="form-value">Jl. Jemur Wonosari gg 2/10</div>
+                        </div>
+                        <div class="form-group">
+                            <label>No. WA Business (CP)</label>
+                            <div class="form-value">0812345678</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Jumlah Total Kamar</label>
+                            <div class="form-value">5 Kamar</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Sisa Kamar Kosong</label>
+                            <div class="form-value">2 Kamar</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Kapasitas Parkir</label>
+                            <div class="form-value">3 Motor</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Biaya Sewa</label>
+                            <div class="form-value">Rp 500.000 / Bulan</div>
+                        </div>
+                        <div class="form-group">
+                            <label>Peraturan Khusus</label>
+                            <div class="form-value">Jam malam max 22.00, Tamu pria dilarang masuk.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="checklist-section">
+                        <h4>Fasilitas (Checklist Y/T)</h4>
+                        <div class="facilities-grid">
+                            <div class="facility-item check-y"><i class='bx bx-check-circle'></i> Listrik</div>
+                            <div class="facility-item check-y"><i class='bx bx-check-circle'></i> Lemari</div>
+                            <div class="facility-item check-t"><i class='bx bx-x-circle'></i> Kipas</div>
+                            <div class="facility-item check-y"><i class='bx bx-check-circle'></i> Kasur</div>
+                            <div class="facility-item check-y"><i class='bx bx-check-circle'></i> Dapur</div>
+                            <div class="facility-item check-t"><i class='bx bx-x-circle'></i> Kulkas</div>
+                            <div class="facility-item check-y"><i class='bx bx-check-circle'></i> WiFi</div>
+                            <div class="facility-item check-y"><i class='bx bx-check-circle'></i> Air</div>
+                            <div class="facility-item check-y"><i class='bx bx-check-circle'></i> CCTV</div>
+                            <div class="facility-item check-y"><i class='bx bx-check-circle'></i> Jemuran</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Tim & Tugas -->
+            <section id="tim" class="view-section">
+                <header class="section-header">
+                    <h1 class="page-title">Struktur & Pembagian Tugas Tim</h1>
+                    <p class="page-subtitle">Susunan panitia pelaksana program MPKM.</p>
+                </header>
+
+                <div class="team-grid">
+                    <div class="team-card glass-card leader-card">
+                        <div class="team-avatar"><i class='bx bxs-user-badge'></i></div>
+                        <div class="team-info">
+                            <h3>Ahadan Atmadikoro (Diko)</h3>
+                            <p class="role">Ketua Pelaksana</p>
+                            <div class="tasks">
+                                <strong>Tugas:</strong> Advokasi RT, Moderasi FGD, Pembagian Tugas
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card glass-card secretary-card">
+                        <div class="team-avatar"><i class='bx bx-edit-alt'></i></div>
+                        <div class="team-info">
+                            <h3>Fina Izatul Khusna</h3>
+                            <p class="role">Sekretaris</p>
+                            <div class="tasks">
+                                <strong>Tugas:</strong> Drafting Surat, Print Undangan, Master Data Excel, Notulensi
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <div class="team-avatar"><i class='bx bx-walk'></i></div>
+                        <div class="team-info">
+                            <h3>Astri Nur Habibah</h3>
+                            <p class="role">Anggota Lapangan</p>
+                            <div class="tasks">
+                                <strong>Tugas:</strong> Door-to-door, Dokumentasi
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <div class="team-avatar"><i class='bx bx-walk'></i></div>
+                        <div class="team-info">
+                            <h3>Abdullah Ghundzar</h3>
+                            <p class="role">Anggota Lapangan</p>
+                            <div class="tasks">
+                                <strong>Tugas:</strong> Door-to-door, Perlengkapan FGD, Dokumentasi
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <div class="team-avatar"><i class='bx bx-walk'></i></div>
+                        <div class="team-info">
+                            <h3>Aisyah Qurrotul Aini</h3>
+                            <p class="role">Anggota Lapangan</p>
+                            <div class="tasks">
+                                <strong>Tugas:</strong> Door-to-door, Edukasi WA Bisnis, Input Data
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <div class="team-avatar"><i class='bx bx-walk'></i></div>
+                        <div class="team-info">
+                            <h3>Aisyul Khofifah</h3>
+                            <p class="role">Anggota Lapangan</p>
+                            <div class="tasks">
+                                <strong>Tugas:</strong> Door-to-door, Konsumsi FGD, Input Data
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <div class="team-avatar"><i class='bx bx-walk'></i></div>
+                        <div class="team-info">
+                            <h3>Amalia Putri Firdausy</h3>
+                            <p class="role">Anggota Lapangan</p>
+                            <div class="tasks">
+                                <strong>Tugas:</strong> Door-to-door, Akun Instagram, Input Data
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catatan-penting">
+                    <div class="catatan-icon"><i class='bx bx-error'></i></div>
+                    <div class="catatan-text">
+                        <strong>Catatan:</strong> Pembagian tugas di atas bersifat fleksibel dan bisa saja berubah melihat kondisi serta data real-time pada saat eksekusi lapangan.
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER AUTHOR -->
+            <footer class="author-footer glass-card">
+                <div class="author-content">
+                    <div class="author-text">
+                        <h3>Profil Profesional</h3>
+                        <p><strong>Ahadan Atmadikoro Wicaksana</strong> adalah seorang akademisi muda dan praktisi interdisipliner yang memadukan keilmuan Tasawuf & Psikoterapi dengan Teknologi Kecerdasan Buatan (AI). Saat ini aktif menempuh pendidikan di Universitas Islam Negeri Sunan Ampel (UINSA) Surabaya.</p>
+                        <p>Dengan latar belakang uniknya, ia berfokus pada pengembangan <em>automation tools</em> dan solusi digital yang dapat diintegrasikan dengan pendekatan psikologi serta kesejahteraan mental berbasis nilai keagamaan (<em>coping religious</em>).</p>
+                    </div>
+                    <div class="author-links">
+                        <a href="https://www.instagram.com/ahadandiko/" target="_blank" class="social-btn ig-btn"><i class='bx bxl-instagram'></i> @ahadandiko</a>
+                        <a href="https://www.instagram.com/ahikocare.id/" target="_blank" class="social-btn shop-btn"><i class='bx bxl-instagram-alt'></i> @ahikocare.id</a>
+                        <a href="https://wa.me/6287861918125" target="_blank" class="social-btn wa-btn"><i class='bx bxl-whatsapp'></i> Hubungi via WA</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast">Teks undangan berhasil disalin!</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
